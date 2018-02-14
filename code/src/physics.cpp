@@ -1,5 +1,9 @@
 #include <imgui\imgui.h>
 #include <imgui\imgui_impl_sdl_gl3.h>
+#include "render_prims.hpp"
+
+
+const int BUFFER_SIZE = 500;
 
 bool show_test_window = false;
 void GUI() {
@@ -25,6 +29,12 @@ void GUI() {
 void PhysicsInit() {
 	// Do your initialization code here...
 	// ...................................
+
+	LilSpheres::setupParticles(BUFFER_SIZE);
+
+
+
+
 }
 
 void PhysicsUpdate(float dt) {

@@ -1,6 +1,7 @@
 #include <GL\glew.h>
 #include <glm\gtc\type_ptr.hpp>
 #include <glm\gtc\matrix_transform.hpp>
+#include "../render_prims.h"
 
 // Boolean variables allow to show/hide the primitives
 bool renderSphere = false;
@@ -25,7 +26,7 @@ namespace LilSpheres {
 	extern const int maxParticles;
 	extern void setupParticles(int numTotalParticles, float radius = 0.05f);
 	extern void cleanupParticles();
-	extern void updateParticles(int startIdx, int count, float* array_data);
+	extern void updateParticles(int startIdx, int count, float* array_data); //
 	extern void drawParticles(int startIdx, int count);
 }
 namespace ClothMesh {

@@ -140,7 +140,10 @@ xcopy "$(ProjectDir)libs\SDL2.dll" "$(OutDir)" /y /d</Command>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\physics.cpp" />
     <ClCompile Include="src\render.cpp" />
-    <ClCompile Include="src\render_prims.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="render_prims.h" />
+    <ClInclude Include="src\render_prims.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
